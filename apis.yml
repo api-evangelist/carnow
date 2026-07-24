@@ -1,22 +1,84 @@
 aid: carnow
 name: CarNow
-description: CarNow is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CarNow is an AI-enabled conversion platform built specifically for automotive
+  dealerships, helping them turn more website visitors into leads, more leads
+  into sales, and more buyers into lifelong service customers. Its product suite
+  spans website solutions (AI-powered chat, digital retail, and shop-by-payment
+  experiences), sales follow-up automation (Cruise Control, which prioritizes
+  high-intent shoppers and automates nurture workflows), and service retention
+  (Lane Assist, which drives post-sale engagement and service scheduling). CarNow
+  works with more than 4,000 dealer partners and integrates with major OEM
+  programs including Acura, Audi, BMW, Ford, General Motors, Honda, Hyundai, Kia,
+  Land Rover, and Lexus. The company is headquartered in Raleigh, North Carolina
+  and is backed by Battery Ventures. CarNow does not publish a public developer
+  portal, API reference, or SDKs; its api.carnow.com endpoint is a
+  partner/internal AWS API Gateway that requires authentication.
 url: https://raw.githubusercontent.com/api-evangelist/carnow/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.carnow.com/wp-content/uploads/2026/07/Group-237.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  No public developer surface found (no docs/API reference/SDKs). api.carnow.com
+  is an internal/partner AWS API Gateway (HTTP 403 MissingAuthenticationToken).
+  /.well-known/security.txt on app.carnow.com returns a placeholder string, not a
+  valid RFC 9116 policy. Enrichment limited to identity + link-property pointers.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Automotive
+- Digital Retail
+- Dealerships
+- Conversational Commerce
+- Artificial Intelligence
+- Lead Generation
+- Chat
 apis: []
+common:
+- type: Website
+  url: https://www.carnow.com/
+- type: Blog
+  url: https://www.carnow.com/blog/
+- type: Support
+  url: https://www.carnow.com/contact/
+- type: Login
+  url: https://app.carnow.com/users/sign_in
+- type: SignUp
+  url: https://www.carnow.com/request-demo/
+- type: PrivacyPolicy
+  url: https://www.carnow.com/privacy-policy-2/
+- type: TermsOfService
+  url: https://www.carnow.com/eula/
+- type: About
+  url: https://www.carnow.com/about/
+- type: Careers
+  url: https://www.carnow.com/careers/
+- type: DomainSecurity
+  url: security/carnow-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
