@@ -38,7 +38,7 @@ x-enrichment-note: >-
   is an internal/partner AWS API Gateway (HTTP 403 MissingAuthenticationToken).
   /.well-known/security.txt on app.carnow.com returns a placeholder string, not a
   valid RFC 9116 policy. Enrichment limited to identity + link-property pointers.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
